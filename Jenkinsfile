@@ -1,4 +1,6 @@
 // NOTE: Requires Pipeline Utility Steps and HTTP Request Plugin 
+import groovy.json.JsonSlurperClassic
+
 pipeline {
     agent any
     stages {
