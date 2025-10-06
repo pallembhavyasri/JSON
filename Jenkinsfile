@@ -17,7 +17,8 @@ pipeline {
                             ]
                             }
                             '''
-                            def obj = new JsonSlurperClassic().parseText(str)
+                            // def obj = new JsonSlurperClassic().parseText(str)
+                            def obj = readJSON(text: str) 
                             println obj
                             def res = []
                             obj.users.each{ ch ->
