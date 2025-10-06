@@ -14,6 +14,7 @@ pipeline {
                     def str = api.content
                     echo "API Response JSON: ${str}"
                     def parsedJson = readJSON(text: str) //readJSON from pipeline utility plugin
+                    echo "parsed json is ${parsedJson}"
                 }
             }
         }
